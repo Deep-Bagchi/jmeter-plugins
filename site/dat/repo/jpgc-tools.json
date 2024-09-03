@@ -1,0 +1,287 @@
+[
+  {
+    "id": "jpgc-cmd",
+    "name": "Command-Line Graph Plotting Tool",
+    "description": "There is small command-line utility for generating graphs out of JTL files. It behave just like right-click context menu on all graphs. The tool can generate PNG, CSV or both. Note you can use GraphsGeneratorListener if you want to bulk generate graphs after a test or for existing results.",
+    "screenshotUrl": "",
+    "helpUrl": "https://jmeter-plugins.org/wiki/JMeterPluginsCMD/",
+    "vendor": "JMeter-Plugins.org",
+    "markerClass": "kg.apc.cmdtools.ReporterTool",
+    "installerClass": "kg.apc.cmdtools.CMDInstaller",
+    "versions": {
+      "2.0": {
+        "downloadUrl": "https://search.maven.org/remotecontent?filepath=kg/apc/jmeter-plugins-cmd/2.0/jmeter-plugins-cmd-2.0.jar",
+        "libs": {
+          "jmeter-plugins-cmn-jmeter": "https://search.maven.org/remotecontent?filepath=kg/apc/jmeter-plugins-cmn-jmeter/0.4/jmeter-plugins-cmn-jmeter-0.4.jar",
+          "cmdrunner": "https://search.maven.org/remotecontent?filepath=kg/apc/cmdrunner/2.1/cmdrunner-2.1.jar"
+        }
+      },
+      "2.1": {
+        "downloadUrl": "https://search.maven.org/remotecontent?filepath=kg/apc/jmeter-plugins-cmd/2.1/jmeter-plugins-cmd-2.1.jar",
+        "libs": {
+          "jmeter-plugins-cmn-jmeter": "https://search.maven.org/remotecontent?filepath=kg/apc/jmeter-plugins-cmn-jmeter/0.4/jmeter-plugins-cmn-jmeter-0.4.jar",
+          "cmdrunner": "https://search.maven.org/remotecontent?filepath=kg/apc/cmdrunner/2.1/cmdrunner-2.1.jar"
+        }
+      },
+      "2.2": {
+        "changes": "Fixed logging for JMeter since v3.2",
+        "downloadUrl": "https://search.maven.org/remotecontent?filepath=kg/apc/jmeter-plugins-cmd/2.2/jmeter-plugins-cmd-2.2.jar",
+        "libs": {
+          "jmeter-plugins-cmn-jmeter>=0.7": "https://search.maven.org/remotecontent?filepath=kg/apc/jmeter-plugins-cmn-jmeter/0.7/jmeter-plugins-cmn-jmeter-0.7.jar",
+          "cmdrunner>=2.2": "https://search.maven.org/remotecontent?filepath=kg/apc/cmdrunner/2.2/cmdrunner-2.2.jar"
+        }
+      }
+    }
+  },
+  {
+    "id": "jpgc-filterresults",
+    "name": "Filter Results Tool",
+    "description": "Often it's necessary to filter the results of a test to obtain a global vision with pages without all the urls that are declared in the html page.",
+    "screenshotUrl": "",
+    "helpUrl": "https://jmeter-plugins.org/wiki/FilterResultsTool/",
+    "vendor": "JMeter-Plugins.org",
+    "markerClass": "kg.apc.cmdtools.FilterResultsTool",
+    "installerClass": "kg.apc.cmdtools.FilterResultsInstaller",
+    "componentClasses": [
+      "org.jmeterplugins.tools.FilterResults"
+    ],
+    "versions": {
+      "2.0": {
+        "downloadUrl": "https://search.maven.org/remotecontent?filepath=kg/apc/jmeter-plugins-filterresults/2.0/jmeter-plugins-filterresults-2.0.jar",
+        "libs": {
+          "jmeter-plugins-cmn-jmeter": "https://search.maven.org/remotecontent?filepath=kg/apc/jmeter-plugins-cmn-jmeter/0.4/jmeter-plugins-cmn-jmeter-0.4.jar",
+          "cmdrunner": "https://search.maven.org/remotecontent?filepath=kg/apc/cmdrunner/2.1/cmdrunner-2.1.jar"
+        }
+      },
+      "2.1": {
+        "downloadUrl": "https://search.maven.org/remotecontent?filepath=kg/apc/jmeter-plugins-filterresults/2.1/jmeter-plugins-filterresults-2.1.jar",
+        "libs": {
+          "jmeter-plugins-cmn-jmeter": "https://search.maven.org/remotecontent?filepath=kg/apc/jmeter-plugins-cmn-jmeter/0.4/jmeter-plugins-cmn-jmeter-0.4.jar",
+          "cmdrunner": "https://search.maven.org/remotecontent?filepath=kg/apc/cmdrunner/2.1/cmdrunner-2.1.jar"
+        }
+      },
+      "2.2": {
+        "changes": "Fixed logging for JMeter since v3.2",
+        "downloadUrl": "https://search.maven.org/remotecontent?filepath=kg/apc/jmeter-plugins-filterresults/2.2/jmeter-plugins-filterresults-2.2.jar",
+        "libs": {
+          "jmeter-plugins-cmn-jmeter>=0.7": "https://search.maven.org/remotecontent?filepath=kg/apc/jmeter-plugins-cmn-jmeter/0.7/jmeter-plugins-cmn-jmeter-0.7.jar",
+          "cmdrunner>=2.2": "https://search.maven.org/remotecontent?filepath=kg/apc/cmdrunner/2.2/cmdrunner-2.2.jar"
+        }
+      }
+    }
+  },
+  {
+    "id": "jpgc-ggl",
+    "name": "Graphs Generator Listener",
+    "description": "Graphs Generator Listener generates several graphs at end of test",
+    "screenshotUrl": "",
+    "helpUrl": "https://jmeter-plugins.org/wiki/GraphsGeneratorListener/",
+    "vendor": "JMeter-Plugins.org",
+    "markerClass": "kg.apc.jmeter.listener.GraphsGeneratorListener",
+    "componentClasses": [
+      "kg.apc.jmeter.listener.GraphsGeneratorListener"
+    ],
+    "versions": {
+      "2.0": {
+        "downloadUrl": "https://search.maven.org/remotecontent?filepath=kg/apc/jmeter-plugins-graphs-ggl/2.0/jmeter-plugins-graphs-ggl-2.0.jar",
+        "libs": {
+          "jmeter-plugins-cmn-jmeter": "https://search.maven.org/remotecontent?filepath=kg/apc/jmeter-plugins-cmn-jmeter/0.7/jmeter-plugins-cmn-jmeter-0.7.jar"
+        },
+        "depends": [
+          "jpgc-cmd"
+        ]
+      }
+    }
+  },
+  {
+    "id": "jpgc-mergeresults",
+    "name": "Merge Results",
+    "description": "Merge Results is a tool to merge files of results (to simplify the comparison of two or more load tests).",
+    "screenshotUrl": "https://jmeter-plugins.org/img/wiki/merge_results_ui.png",
+    "helpUrl": "https://jmeter-plugins.org/wiki/MergeResults/",
+    "vendor": "JMeter-Plugins.org",
+    "markerClass": "org.jmeterplugins.save.MergeResultsService",
+    "installerClass": "org.jmeterplugins.save.MergeResultsInstaller",
+    "componentClasses": [
+      "kg.apc.jmeter.vizualizers.MergeResultsGui"
+    ],
+    "versions": {
+      "2.1": {
+        "downloadUrl": "https://search.maven.org/remotecontent?filepath=kg/apc/jmeter-plugins-mergeresults/2.1/jmeter-plugins-mergeresults-2.1.jar",
+        "libs": {
+          "jmeter-plugins-cmn-jmeter": "https://search.maven.org/remotecontent?filepath=kg/apc/jmeter-plugins-cmn-jmeter/0.7/jmeter-plugins-cmn-jmeter-0.7.jar"
+        }
+      }
+    }
+  },
+  {
+    "id": "jpgc-pde",
+    "name": "Page Data Extractor",
+    "description": "This graph will plot data extracted from page results (status, health pages, etc.).",
+    "screenshotUrl": "https://jmeter-plugins.org/img/wiki/PageDataExtractor.png",
+    "helpUrl": "https://jmeter-plugins.org/wiki/PageDataExtractor/",
+    "vendor": "JMeter-Plugins.org",
+    "markerClass": "kg.apc.jmeter.vizualizers.PageDataExtractorOverTimeGui",
+    "componentClasses": [
+      "kg.apc.jmeter.vizualizers.PageDataExtractorOverTimeGui"
+    ],
+    "versions": {
+      "0.1": {
+        "downloadUrl": "https://search.maven.org/remotecontent?filepath=kg/apc/jmeter-plugins-pde/0.1/jmeter-plugins-pde-0.1.jar",
+        "libs": {
+          "jmeter-plugins-cmn-jmeter": "https://search.maven.org/remotecontent?filepath=kg/apc/jmeter-plugins-cmn-jmeter/0.7/jmeter-plugins-cmn-jmeter-0.7.jar"
+        },
+        "depends": [
+          "jpgc-cmd"
+        ]
+      }
+    }
+  },
+  {
+    "id": "jpgc-plancheck",
+    "name": "Test Plan Check Tool",
+    "description": "Small command line tool to check test plan consistency. Helps in automation of JMeter executions.",
+    "screenshotUrl": "",
+    "helpUrl": "https://jmeter-plugins.org/wiki/TestPlanCheckTool/",
+    "vendor": "JMeter-Plugins.org",
+    "markerClass": "kg.apc.cmdtools.TestPlanCheckTool",
+    "installerClass": "kg.apc.cmdtools.TestPlanCheckInstaller",
+    "versions": {
+      "2.0": {
+        "downloadUrl": "https://search.maven.org/remotecontent?filepath=kg/apc/jmeter-plugins-plancheck/2.0/jmeter-plugins-plancheck-2.0.jar",
+        "libs": {
+          "jmeter-plugins-cmn-jmeter": "https://search.maven.org/remotecontent?filepath=kg/apc/jmeter-plugins-cmn-jmeter/0.4/jmeter-plugins-cmn-jmeter-0.4.jar",
+          "cmdrunner": "https://search.maven.org/remotecontent?filepath=kg/apc/cmdrunner/2.1/cmdrunner-2.1.jar"
+        }
+      },
+      "2.1": {
+        "downloadUrl": "https://search.maven.org/remotecontent?filepath=kg/apc/jmeter-plugins-plancheck/2.1/jmeter-plugins-plancheck-2.1.jar",
+        "libs": {
+          "jmeter-plugins-cmn-jmeter": "https://search.maven.org/remotecontent?filepath=kg/apc/jmeter-plugins-cmn-jmeter/0.4/jmeter-plugins-cmn-jmeter-0.4.jar",
+          "cmdrunner": "https://search.maven.org/remotecontent?filepath=kg/apc/cmdrunner/2.1/cmdrunner-2.1.jar"
+        }
+      },
+      "2.2": {
+        "changes": "Fixed working plugin with JMeter v3.2",
+        "downloadUrl": "https://search.maven.org/remotecontent?filepath=kg/apc/jmeter-plugins-plancheck/2.2/jmeter-plugins-plancheck-2.2.jar",
+        "libs": {
+          "jmeter-plugins-cmn-jmeter": "https://search.maven.org/remotecontent?filepath=kg/apc/jmeter-plugins-cmn-jmeter/0.4/jmeter-plugins-cmn-jmeter-0.4.jar",
+          "cmdrunner": "https://search.maven.org/remotecontent?filepath=kg/apc/cmdrunner/2.1/cmdrunner-2.1.jar"
+        }
+      },
+      "2.3": {
+        "changes": "Fixed logging for JMeter since v3.2",
+        "downloadUrl": "https://search.maven.org/remotecontent?filepath=kg/apc/jmeter-plugins-plancheck/2.3/jmeter-plugins-plancheck-2.3.jar",
+        "libs": {
+          "jmeter-plugins-cmn-jmeter": "https://search.maven.org/remotecontent?filepath=kg/apc/jmeter-plugins-cmn-jmeter/0.4/jmeter-plugins-cmn-jmeter-0.4.jar",
+          "cmdrunner": "https://search.maven.org/remotecontent?filepath=kg/apc/cmdrunner/2.1/cmdrunner-2.1.jar"
+        }
+      },
+      "2.4": {
+        "changes": "Update cmn and cmdrunner dependencies",
+        "downloadUrl": "https://search.maven.org/remotecontent?filepath=kg/apc/jmeter-plugins-plancheck/2.4/jmeter-plugins-plancheck-2.4.jar",
+        "libs": {
+          "jmeter-plugins-cmn-jmeter>=0.7": "https://search.maven.org/remotecontent?filepath=kg/apc/jmeter-plugins-cmn-jmeter/0.7/jmeter-plugins-cmn-jmeter-0.7.jar",
+          "cmdrunner>=2.2": "https://search.maven.org/remotecontent?filepath=kg/apc/cmdrunner/2.2/cmdrunner-2.2.jar"
+        }
+      }
+    }
+  },
+  {
+    "id": "jpgc-synthesis",
+    "name": "Synthesis Report",
+    "description": "Synthesis Report is a mix between Summary Report and Aggregate Report",
+    "screenshotUrl": "https://jmeter-plugins.org/img/wiki/synthesis_report.png",
+    "helpUrl": "https://jmeter-plugins.org/wiki/SynthesisReport/",
+    "vendor": "JMeter-Plugins.org",
+    "markerClass": "kg.apc.jmeter.vizualizers.SynthesisReportGui",
+    "componentClasses": [
+      "kg.apc.jmeter.vizualizers.AggregateReportGui",
+      "kg.apc.jmeter.vizualizers.SynthesisReportGui"
+    ],
+    "versions": {
+      "2.0": {
+        "downloadUrl": "https://search.maven.org/remotecontent?filepath=kg/apc/jmeter-plugins-synthesis/2.0/jmeter-plugins-synthesis-2.0.jar",
+        "libs": {
+          "jmeter-plugins-cmn-jmeter": "https://search.maven.org/remotecontent?filepath=kg/apc/jmeter-plugins-cmn-jmeter/0.4/jmeter-plugins-cmn-jmeter-0.4.jar"
+        },
+        "depends": [
+          "jpgc-filterresults"
+        ]
+      },
+      "2.1": {
+        "changes": "Fixed working with JMeter v3.2",
+        "downloadUrl": "https://search.maven.org/remotecontent?filepath=kg/apc/jmeter-plugins-synthesis/2.1/jmeter-plugins-synthesis-2.1.jar",
+        "libs": {
+          "jmeter-plugins-cmn-jmeter": "https://search.maven.org/remotecontent?filepath=kg/apc/jmeter-plugins-cmn-jmeter/0.4/jmeter-plugins-cmn-jmeter-0.4.jar"
+        },
+        "depends": [
+          "jpgc-filterresults"
+        ]
+      },
+      "2.2": {
+        "changes": "Fixed Configuration Percentiles in Aggregate Report. Fixed Labels in csv reports",
+        "downloadUrl": "https://search.maven.org/remotecontent?filepath=kg/apc/jmeter-plugins-synthesis/2.2/jmeter-plugins-synthesis-2.2.jar",
+        "libs": {
+          "jmeter-plugins-cmn-jmeter": "https://search.maven.org/remotecontent?filepath=kg/apc/jmeter-plugins-cmn-jmeter/0.7/jmeter-plugins-cmn-jmeter-0.7.jar"
+        },
+        "depends": [
+          "jpgc-filterresults"
+        ]
+      }
+    }
+  },
+  {
+    "id": "jpgc-sts",
+    "name": "HTTP Simple Table Server",
+    "description": "The main idea is to use a tiny http server in JMeter Plugins to manage the dataset files with simple commands to get / add / find rows of data in files.",
+    "screenshotUrl": "https://jmeter-plugins.org/img/wiki/http_simple_table_server.png",
+    "helpUrl": "https://jmeter-plugins.org/wiki/HttpSimpleTableServer/",
+    "vendor": "JMeter-Plugins.org",
+    "markerClass": "org.jmeterplugins.protocol.http.control.HttpSimpleTableServer",
+    "installerClass": "org.jmeterplugins.protocol.http.control.STSInstaller",
+    "componentClasses": [
+      "org.jmeterplugins.protocol.http.control.gui.HttpSimpleTableControlGui"
+    ],
+    "versions": {
+      "2.1": {
+        "downloadUrl": "https://search.maven.org/remotecontent?filepath=kg/apc/jmeter-plugins-table-server/2.1/jmeter-plugins-table-server-2.1.jar",
+        "libs": {
+          "jmeter-plugins-cmn-jmeter": "https://search.maven.org/remotecontent?filepath=kg/apc/jmeter-plugins-cmn-jmeter/0.4/jmeter-plugins-cmn-jmeter-0.4.jar"
+        }
+      },
+      "2.2": {
+        "downloadUrl": "https://search.maven.org/remotecontent?filepath=kg/apc/jmeter-plugins-table-server/2.2/jmeter-plugins-table-server-2.2.jar",
+        "libs": {
+          "jmeter-plugins-cmn-jmeter": "https://search.maven.org/remotecontent?filepath=kg/apc/jmeter-plugins-cmn-jmeter/0.4/jmeter-plugins-cmn-jmeter-0.4.jar"
+        }
+      },
+      "2.3": {
+        "downloadUrl": "https://search.maven.org/remotecontent?filepath=kg/apc/jmeter-plugins-table-server/2.3/jmeter-plugins-table-server-2.3.jar",
+        "libs": {
+          "jmeter-plugins-cmn-jmeter": "https://search.maven.org/remotecontent?filepath=kg/apc/jmeter-plugins-cmn-jmeter/0.4/jmeter-plugins-cmn-jmeter-0.4.jar"
+        }
+      },
+      "2.4": {
+        "downloadUrl": "https://search.maven.org/remotecontent?filepath=kg/apc/jmeter-plugins-table-server/2.4/jmeter-plugins-table-server-2.4.jar",
+        "libs": {
+          "jmeter-plugins-cmn-jmeter": "https://search.maven.org/remotecontent?filepath=kg/apc/jmeter-plugins-cmn-jmeter/0.7/jmeter-plugins-cmn-jmeter-0.7.jar"
+        }
+      },
+      "3.1": {
+        "changes": "Replace beanshell with groovy script : jsr223.init.file=simple-table-server.groovy. New features : Could load files when STS startup, Set charset to read or write file and in http header response, Add CONFIG command, add daemon mode for linux nohup, SAVE command add ADD_TIMESTAMP parameter",
+        "downloadUrl": "https://search.maven.org/remotecontent?filepath=kg/apc/jmeter-plugins-table-server/3.1/jmeter-plugins-table-server-3.1.jar",
+        "libs": {
+          "jmeter-plugins-cmn-jmeter": "https://search.maven.org/remotecontent?filepath=kg/apc/jmeter-plugins-cmn-jmeter/0.7/jmeter-plugins-cmn-jmeter-0.7.jar"
+        }
+      },
+      "4.0": {
+        "changes": "Add command FIND, find a string in the file, FIND_MODE=SUBSTRING (Default), EQUALS, REGEX_FIND, REGEX_MATCH",
+        "downloadUrl": "https://search.maven.org/remotecontent?filepath=kg/apc/jmeter-plugins-table-server/4.0/jmeter-plugins-table-server-4.0.jar",
+        "libs": {
+          "jmeter-plugins-cmn-jmeter": "https://search.maven.org/remotecontent?filepath=kg/apc/jmeter-plugins-cmn-jmeter/0.7/jmeter-plugins-cmn-jmeter-0.7.jar"
+        }
+      }
+    }
+  }
+]

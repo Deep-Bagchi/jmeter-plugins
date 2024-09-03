@@ -1,0 +1,255 @@
+body {
+    background-color: white;
+    font-family: Tahoma, Arial, Verdana, sans-serif;
+}
+
+.position {
+    border-bottom: 1px solid #c9d7f1;
+    font-size: smaller;
+}
+
+.site-header {
+    padding-bottom: 0.5em;
+}
+
+.site-header > * {
+    display: inline-block;
+    color: #666;
+    vertical-align: middle;
+    margin-left: 1em;
+}
+
+.site-header > div > div:first-child {
+    font-size: 2.5em;
+}
+
+.site-header .sponsorship {
+    margin-top: 0.25em;
+}
+
+nav.navbar-default {
+    padding: 0.5em 0 0 0.5em;
+    border: none;
+    background: #ebeff9 none;
+    vertical-align: bottom;
+    min-height: 0;
+    border-bottom: 1px solid #6b90da;
+    box-shadow: none;
+}
+
+nav.navbar-default .navbar-nav li {
+    vertical-align: bottom;
+    white-space: nowrap;
+}
+
+nav.navbar-default .navbar-nav li.active {
+    margin-bottom: -1px;
+    border: 1px solid #6b90da;
+    border-bottom: 1px solid white;
+    background-color: white;
+}
+
+nav.navbar-default .navbar-nav li a i {
+    margin-right: 0.25em;
+    color: #666;
+}
+
+nav.navbar-default .navbar-nav li a {
+    padding: 0.25em 0.5em 0.5em;
+    margin: 0 0.5em;
+    background: none;
+    font-weight: bold;
+    color: #337ab7;
+}
+
+nav.navbar-default .navbar-nav li.active a:hover {
+    background: none;
+    color: #337ab7;
+}
+
+nav.navbar-default .navbar-nav li.active a {
+    background: none;
+    box-shadow: none;
+}
+
+footer .container {
+    margin-top: 3em;
+    padding: 0.5em;
+    border-top: 2px solid #ccc;
+    font-size: smaller;
+    color: gray;
+}
+
+/* Downloads */
+.file_download {
+    display: block;
+    border: 1px dotted silver;
+    margin: 1em;
+    padding: 0.5em;
+    background-color: #EEE;
+}
+
+.file_download a {
+    background: url('/img/icons/download-icon.png') no-repeat;
+    padding-left: 2em;
+}
+
+.file_download i {
+    padding-left: 2em;
+}
+
+.file_download b {
+    font-size: larger;
+}
+
+.file_download .filesize, .file_download .filedate {
+    color: gray;
+    font-weight: bold;
+}
+
+.file_download .count {
+    color: gray;
+    float: right;
+}
+
+/* WIKI */
+table.wiki {
+    width: 100%;
+}
+
+table.wiki td {
+    vertical-align: top;
+}
+
+table.wiki h1 font, table.wiki h2 font, table.wiki h3 font {
+    font-size: 0.6em;
+    margin-left: 0.25em;
+}
+
+table.wiki tbody tr td:first-child {
+    padding-right: 3em;
+}
+
+table.wiki pre, table.wiki tt {
+    background-color: #DDD;
+    font-size: 1em;
+    padding: 0 0.25em;
+    border-radius: 0.25em;
+}
+
+table.wiki pre {
+    padding: 1em;
+    overflow-x: auto;
+    overflow-y: auto;
+    word-wrap: break-word;
+    color: black;
+    white-space: pre-wrap;
+}
+
+table.wiki ol, table.wiki ul {
+    line-height: 1.7;
+}
+
+table.wiki .sidebar {
+    border-radius: 0.3em;
+    white-space: nowrap;
+    padding-left: 1em;
+    border-left: 1px solid #eee;
+    vertical-align: top;
+}
+
+table.wiki .sidebar sup, table.wiki .sidebar font {
+    display: none;
+}
+
+@media (min-width: 0px) {
+    table.wiki .sidebar {
+        display: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    table.wiki .sidebar {
+        display: table-cell;
+    }
+}
+
+table.wiki .toc-list {
+    margin-bottom: 0.75em;
+    white-space: nowrap;
+    list-style-type: decimal;
+}
+
+table.wiki .toc-list1 {
+    padding-bottom: 3em;
+}
+
+table.wiki a.anchorLink {
+    vertical-align: bottom;
+    padding-left: 0.5em;
+    font-size: 0.8em;
+    text-decoration: none;
+    color: gray;
+    top: -0.25em;
+}
+
+table.wiki img {
+    max-width: 100%;
+}
+
+.stick {
+    position: fixed;
+    top: 2em;
+    display: block;
+}
+
+/* Home */
+.sets-list div {
+    margin-bottom: 1em;
+}
+
+.sets-list div img {
+    height: 64px;
+    margin-left: 2em;
+}
+
+/* Catalogue */
+#catalogue .list .alert {
+    background-color: #ebeff9;
+    border-color: #c9d7f1;
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+#catalogue input {
+    font-size: 1.5em;
+    width: 100%;
+}
+
+#catalogue .alert img {
+    max-width: 10em;
+    max-height: 10em;
+    width: 100%;
+    border: 1px solid silver;
+}
+
+/* Stats */
+.sparkline-container {
+    margin-top: 1em;
+}
+
+.jqstooltip {
+    padding: 0 !important;
+    border: none !important;
+}
+
+.jqsfield > span {
+    display: none;
+}
+
+#platforms {
+    width: 100%;
+    font-size: smaller;
+}
